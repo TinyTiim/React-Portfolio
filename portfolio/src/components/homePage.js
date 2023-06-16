@@ -1,9 +1,11 @@
+//Importing Items
 import React from 'react';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import circleIcon from '../assets/img/IMG_3434 (2).jpg';
 
+//This allows my home page to have a circular icon and a aboutme box, as well as fontawesome icons for linkdin and github.
 function HomePage() {
   return (
     <div id="home">
@@ -34,6 +36,7 @@ function HomePage() {
                 If you're looking for a dedicated and enthusiastic software engineer who brings a blend of technical skills, creativity, and a strong work ethic,
                 I would love to connect and discuss potential opportunities to collaborate on exciting projects.
               </p>
+              
               <div className="social-icons">
                 <a href="https://github.com/TinyTiim" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} className="icon" size="2x" />

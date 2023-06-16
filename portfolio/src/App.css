@@ -1,5 +1,5 @@
 
-/*Default CSS*/
+/*My fonts*/
 @font-face {
   font-family: 'Bagel Fat One';
   src: url(./assets/font/BagelFatOne-Regular.ttf);
@@ -23,6 +23,7 @@
   src: url(./assets/font/RobotoCondensed-Light.ttf);
   font-weight: 400px;
 }
+/* Default CSS*/
 
 * {
   margin: 0;
@@ -47,6 +48,7 @@ body {
   font-family: 'Bagel Fat One' , sans-serif !important;
 }
 
+/* This is for my background this allows it to change different gradients in keyframes.*/
 
 @keyframes gradient {
   0% {
@@ -59,6 +61,8 @@ body {
     background-position: 0% 50%;
   }
 }
+
+/* My home page */
 
 .home-container {
   font-family: 'Roboto Condensed', italic ;
@@ -102,19 +106,8 @@ body {
   margin-right: 30px; 
 
 }
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
-}
 
-p.success {
-  color:green;
-}
-
-p.danger {
-  color:red;
-}
+/* My navgation bar */
 
 nav.navbar {
   padding: 18px 0;
@@ -197,6 +190,8 @@ nav.navbar .navbar-toggle:focus {
   outline: none;
   box-shadow: none;
 }
+
+/* My projects */
 
 .projectheader {
   font-weight: 900;

@@ -1,6 +1,8 @@
+//Importing items
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
+//This sets up a active link and scrolled varibles and will add and remove event listeners when scrolling.
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
@@ -23,6 +25,7 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
+  //Navigation bar allowing you to redirect when pressing one of the buttons. and adding a collapse feature when the page is smaller.
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
