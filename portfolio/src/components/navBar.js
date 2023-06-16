@@ -26,29 +26,32 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">Sophia Palomo</Navbar.Brand>
+        <Navbar.Brand href="home">Sophia Palomo</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
               href="#home"
-              className={activeLink === "home" ? "active navbar-link" : "navbar-link"}
-              onClick={() => onUpdateActiveLink("home")}
-            >
+              className={
+                activeLink === "home" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("home")}>
               Home
             </Nav.Link>
             <Nav.Link
               href="#skills"
-              className={activeLink === "skills" ? "active navbar-link" : "navbar-link"}
-              onClick={() => onUpdateActiveLink("skills")}
-            >
+              className={
+                activeLink === "skills" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("skills")}>
               Skills
             </Nav.Link>
             <Nav.Link
               href="#projects"
-              className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
-              onClick={() => onUpdateActiveLink("projects")}
-            >
+              className={
+                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("projects")}>
               Projects
             </Nav.Link>
           </Nav>
