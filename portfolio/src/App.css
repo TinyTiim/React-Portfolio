@@ -1,9 +1,4 @@
 
-
-
-
-
-
 /*Default CSS*/
 @font-face {
   font-family: 'Bagel Fat One';
@@ -132,7 +127,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #282c34;
+  background-color: #282c344f;
 }
 
 nav.navbar a.navbar-brand {
@@ -203,6 +198,62 @@ nav.navbar .navbar-toggle:focus {
   box-shadow: none;
 }
 
+.projectheader {
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  width: calc(30% - 10px); 
+  padding: 20px;
+  margin: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #3238445e;
+  color: #fff;
+  opacity: 20%;
+  transition: background-color 0.3s ease; 
+  transition: opacity 0.3s ease; 
+}
+
+.project-card:hover {
+  background-color: #6500d846;
+  opacity: 100
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-image-container .project-image {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.project-image-container:hover .project-image {
+  filter: grayscale(0%);
+}
 
 .App {
   text-align: center;

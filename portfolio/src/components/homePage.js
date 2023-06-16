@@ -6,6 +6,7 @@ import circleIcon from '../assets/img/IMG_3434 (2).jpg';
 
 function HomePage() {
   return (
+    <div id="home">
     <div className="home-container">
       <div className="circle-icon">
         <img src={circleIcon} alt="Circle Icon" />
@@ -16,13 +17,13 @@ function HomePage() {
             <div className="about-box">
               <h2>About Me</h2>
               <p>
-                I'm Sophia Palomo, a highly motivated and detail-oriented software engineer with a strong passion for web development and video game creation.
+                I'm Sophia Palomo, a highly motivated and detail-oriented web-developer with a strong passion for computer science and video game creation.
                 Currently enrolled in a full-stack web development bootcamp, I'm dedicated to acquiring new skills and knowledge to excel in the field.
                 I love problem-solving and completing projects while being creative.
               </p>
               <p>
-                My journey in software engineering has equipped me with expertise in various technologies, including JavaScript, HTML, CSS, and frameworks like React.
-                Additionally, I have been exploring Unity and C#, expanding my skills to create captivating video games.
+                I want to become a software-engineer and that journey has equipped me with expertise in various technologies, including JavaScript, HTML, CSS, and frameworks like React.
+                Additionally, I have been exploring Python and C#, expanding my skills in other langagues.
                 I'm constantly seeking opportunities to contribute to innovative projects and gain practical experience in software development.
               </p>
               <p>
@@ -45,6 +46,7 @@ function HomePage() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
