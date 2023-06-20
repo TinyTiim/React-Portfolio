@@ -23,7 +23,7 @@ To run this project locally, you need to have npm (Node Package Manager) and Rea
    ```shell
    npm install
 
-   ## Usage
+## Usage
   
   ![Home Page](./portfolio/src/assets/img/homepage.JPG)
 
