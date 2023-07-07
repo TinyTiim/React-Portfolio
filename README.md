@@ -2,7 +2,7 @@
 
   ## Description
 
-    I made this Portfolio using backend and React, as well as node_modules. This project showed me how fun it is to use React as opposed to just plain html and css. I still have alot more I want to be able to do with this portfolio and add alot more animations. Features I would love to implent are light and dark mode, and finshing the contact page and skills.
+  I made this Portfolio using backend and React, as well as node_modules. This project showed me how fun it is to use React as opposed to just plain html and css. I still have alot more I want to be able to do with this portfolio and add alot more animations. Features I would love to implent are light and dark mode, and finshing the contact page and skills.
 
   ## Table of Contents
 
@@ -23,7 +23,7 @@ To run this project locally, you need to have npm (Node Package Manager) and Rea
    ```shell
    npm install
 
-   ## Usage
+## Usage
   
   ![Home Page](./portfolio/src/assets/img/homepage.JPG)
 
