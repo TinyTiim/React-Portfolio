@@ -8,22 +8,11 @@ https://react-portfoliosp-99254eccb7f0.herokuapp.com/
 
   ## Table of Contents
 
-  -[Installation](#installation)
+ 
   -[Usage](#usage)
   -[Credits](#credits)
   -[License](#license)
   -[Contact](#contact)
-
-  ## Installation
-
-To run this project locally, you need to have npm (Node Package Manager) and React installed. Follow the steps below to get started:
-
-1. Clone this repository to your local machine.
-2. Open a terminal and navigate to the project's root directory.
-3. Run the following command to install the required dependencies:
-
-   ```shell
-   npm install
 
 ## Usage
   
