@@ -1,6 +1,8 @@
 //Importing items
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+
+
 
 //This sets up a active link and scrolled varibles and will add and remove event listeners when scrolling.
 export const NavBar = () => {
@@ -25,9 +27,18 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
+  const scrollToRef = useRef(null);
+  
+  const handleButtonClick = () => {
+    // Scroll to the referenced element when the button is clicked
+    if (scrollToRef.current) {
+      scrollToRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   //Navigation bar allowing you to redirect when pressing one of the buttons. and adding a collapse feature when the page is smaller.
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">Sophia Palomo</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -54,10 +65,14 @@ export const NavBar = () => {
             >
               Projects
             </Nav.Link>
+            <Nav.Link
+              href="#connect"
+              className={activeLink === "connect" ? "active navbar-link button-link" : "navbar-link button-link"}
+              onClick={() => onUpdateActiveLink("connect")}
+            >
+              <span>Let's get in touch!</span>
+            </Nav.Link>
           </Nav>
-          <button className="vvd" onClick={() => console.log("connect")}>
-            <span>Let's get in touch!</span>
-          </button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

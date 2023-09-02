@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { NavBar } from './components/navBar.js';
 import  HomePage  from './components/homePage.js';
 import  Projects  from "./components/projects.js";
+import  Contact from "./components/contact.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <HomePage />
       <Projects />
+      <Contact />
     </div>
   );
 }
