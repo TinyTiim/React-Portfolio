@@ -4,6 +4,8 @@ import imgMovie from '../assets/img/225480136-b6c18009-3280-4fc3-90f2-c94f094474
 import imgRead from '../assets/img/readme.JPG';
 import imgPass from '../assets/img/password.JPG';
 import imgEmploy from '../assets/img/employee.JPG';
+import imgDev from '../assets/img/devConnect.JPG';
+import imgNote from '../assets/img/note takerrr.JPG';
 
 //My project boxes with all their info included, as well as when clicked they bring you to linked url.
 const Projects = () => {
@@ -31,6 +33,18 @@ const Projects = () => {
       description: "This application is an employee-manager database system.",
       imgUrl: imgEmploy,
       githubUrl: "https://github.com/TinyTiim/myEmployees"
+    },
+    {
+      title: "DevConnect",
+      description: "A way to connect with other developers.",
+      imgUrl: imgDev,
+      githubUrl: "https://github.com/TinyTiim/DevConnect"
+    },
+    {
+      title: "Note taker",
+      description: "It allows you to store notes as well as delete and save.",
+      imgUrl: imgNote,
+      githubUrl: "https://github.com/TinyTiim/Note-Taker"
     },
   ];
 //The return format, so everything gets exported in this container in the projects tab.

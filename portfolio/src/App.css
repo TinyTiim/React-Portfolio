@@ -43,7 +43,7 @@ body  {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) ;
   background-size: 400% 500%;
   animation: gradient 15s ease infinite !important;
-  height: 100vh;
+  height: 200vh;
   color: #fff !important;
   font-family: 'Bagel Fat One' , sans-serif !important;
 }
@@ -74,6 +74,9 @@ body  {
   margin-top: -10px;
 }
 
+.home-container h2 {
+  font-family: 'Bagel Fat One' , sans-serif;
+}
 
 .circle-icon {
   width: 120px;
@@ -369,4 +372,62 @@ nav.navbar .navbar-toggle:focus {
 
 .contact p.danger {
   color: #e74c3c;
+}
+
+/*Skills*/
+
+.skill {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.skill h2 {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  margin-bottom: 10px;
+  font-family: 'Roboto Condensed', italic;
+  text-align: center;
+}
+
+.Carousel {
+  margin-top: 10px;
+}
+
+.circular-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.skill-box {
+  margin-top: 60px; 
+  margin-bottom: 150px; 
+}
+
+.percentage {
+  font-size: 25px;
+  fill: #ffffffee;
+}
+
+.progress-bg-circle,
+.progress-fill-circle {
+  fill: transparent;
+  stroke-linecap: round;
+}
+
+.progress-bg-circle {
+  stroke: #0000003b;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
 }

@@ -20,7 +20,7 @@ function HomePage() {
               <h2>About Me</h2>
               <p>
                 I'm Sophia Palomo, a highly motivated and detail-oriented web-developer with a strong passion for computer science and video game creation.
-                Currently enrolled in a full-stack web development bootcamp I'm dedicated to acquiring new skills and knowledge to excel in the field.
+                Currently enrolled in a full-stack web development bootcamp, I'm dedicated to acquiring new skills and knowledge to excel in the field.
                 I love problem-solving and completing projects while being creative.
               </p>
               <p>
@@ -33,7 +33,7 @@ function HomePage() {
                 Valorant and League of Legends are currently my top favorites.
               </p>
               <p>
-                If you're looking for a dedicated and enthusiastic software engineer who brings a blend of technical skills, creativity, and a strong work ethic,
+                If you're looking for a dedicated and enthusiastic software engineer who brings a blend of technical skills, creativity, and a strong work ethiccd
                 I would love to connect and discuss potential opportunities to collaborate on exciting projects.
               </p>
               
