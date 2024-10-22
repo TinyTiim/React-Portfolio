@@ -36,16 +36,20 @@ html {
   scroll-padding-top: 75px;
 }
 
-body  {
+body {
   font-weight: normal;
   overflow-x: hidden;
   position: relative;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) ;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 500%;
   animation: gradient 15s ease infinite !important;
   height: 200vh;
   color: #fff !important;
-  font-family: 'Bagel Fat One' , sans-serif !important;
+  font-family: 'Bagel Fat One', sans-serif !important;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow to body text */
+}
+.contact h2, .home-container h2, .projectheader, .navbar-link {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for headings */
 }
 
 /* This is for my background this allows it to change different gradients in keyframes.*/
@@ -219,7 +223,8 @@ nav.navbar .navbar-toggle:focus {
 
 .projectheader {
   font-weight: 900;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 .project-card-container {
@@ -313,66 +318,6 @@ nav.navbar .navbar-toggle:focus {
   }
 }
 
-/* Contact */
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 0;
-  padding-top: 150px;
-  margin-left: 550px;
-  
-}
-
-.contact h2 {
-  
-  font-size: 2rem;
-  margin-bottom: 70px;
-  color: #ffffff;
-  
-}
-
-.contact form {
-
-  max-width: 1000px; 
-  width: 100%;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact form input,
-.contact form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.contact form button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.contact form button:hover {
-  background-color: #0056b3;
-}
-
-.contact p.success {
-  color: #2ecc71;
-}
-
-.contact p.danger {
-  color: #e74c3c;
-}
 
 /*Skills*/
 
@@ -430,4 +375,185 @@ nav.navbar .navbar-toggle:focus {
   width: 80%;
   margin: 0 auto;
   position: relative;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  /* Center vertically */
+  padding: 100px 0;
+  margin-top: 100px;
+  width: 100%;
+  padding-bottom: 300px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.contact form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;  /* Ensure full width on smaller screens */
+  max-width: 600px; /* Limit the width for larger screens */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact form button:hover {
+  background-color: #0056b3;
+}
+
+.contact p.success {
+  color: #2ecc71;
+}
+
+.contact p.danger {
+  color: #e74c3c;
+}
+
+.g-recaptcha {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* For extra small devices (phones, 0px and up) */
+@media (max-width: 575px) {
+  /* Example: Adjusting fonts and padding for very small screens */
+  body {
+    font-size: 14px;
+  }
+
+  .contact h2, .home-container h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .contact form, .project-card {
+    padding: 15px;
+    width: 100%;
+  }
+
+  nav.navbar {
+    padding: 10px 0;
+  }
+
+  .navbar-text button {
+    font-size: 16px;
+  }
+}
+
+/* For small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Adjustments for small tablets */
+  .contact, .project-card-container {
+    padding: 60px 0;
+  }
+
+  .contact h2, .home-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .project-card {
+    width: 100%; /* Make project cards full-width */
+    margin-bottom: 20px;
+  }
+
+  .skill {
+    padding: 60px 0;
+  }
+}
+
+/* For medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Adjustments for tablets and smaller laptops */
+  body {
+    font-size: 16px;
+  }
+
+  .contact, .project-card-container, .skill {
+    padding: 80px 0;
+  }
+
+  .contact form {
+    padding: 20px;
+    width: 90%; /* Slightly smaller than desktop */
+  }
+
+  nav.navbar {
+    padding: 15px 0;
+  }
+
+  .circle-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* For large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Adjustments for larger tablets and smaller desktops */
+  .project-card {
+    width: calc(50% - 20px); /* Two-column layout for projects */
+  }
+
+  .contact {
+    padding: 100px 0;
+    margin-top: 150px;
+  }
+
+  .skill {
+    padding: 80px 0;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+}
+
+/* For extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Default for large desktops */
+  body {
+    font-size: 18px;
+  }
+
+  .contact {
+    padding: 100px 0;
+  }
+
+  .project-card {
+    width: calc(30% - 20px); /* Three-column layout for projects */
+  }
+
+  .contact form {
+    max-width: 600px; /* Keep form smaller on large screens */
+  }
 }
